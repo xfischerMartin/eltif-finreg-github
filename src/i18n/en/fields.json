@@ -1,0 +1,362 @@
+{
+  "name_of_eltif": {
+    "label": "Name of ELTIF",
+    "help": "The official name of the fund under which it will be offered to investors."
+  },
+  "legal_form": {
+    "label": "Legal Form",
+    "help": "The legal \"wrapper\" of the fund. A SICAV is a variable-capital company issuing investment shares; an open-ended mutual fund has no legal personality — it is run by a management company and issues units. The choice affects who manages the fund and what securities you hold.",
+    "options": {
+      "SICAV": "SICAV (investment shares)",
+      "OPF": "Open-ended mutual fund (units)"
+    }
+  },
+  "self_managed": {
+    "label": "Self-Managed",
+    "help": "Whether the SICAV manages its own assets (holds its own licence) or delegates management to an external company. Not applicable to a mutual fund.",
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "name_of_aifm": {
+    "label": "AIFM",
+    "help": "The licensed company that actually runs the fund — decides on investments and ensures the rules are followed."
+  },
+  "name_of_management_company": {
+    "label": "Management Company",
+    "help": "The management company that created and runs the mutual fund. A mutual fund is not a company itself, so it is always run by this company."
+  },
+  "name_of_investment_manager": {
+    "label": "Investment Manager",
+    "help": "Who actually selects the specific investments, where this role is delegated. Optional."
+  },
+  "name_of_administrator": {
+    "label": "Administrator",
+    "help": "The company providing the fund's operational back office — accounting, valuation, reporting."
+  },
+  "name_of_depositary": {
+    "label": "Depositary",
+    "help": "The bank or broker that safekeeps the fund's assets and oversees their movements. Required by law for every fund."
+  },
+  "fund_reference_currency": {
+    "label": "Reference Currency",
+    "help": "The base currency in which the fund's total value is calculated. Holdings in other currencies are converted into it.",
+    "options": {
+      "CZK": "CZK",
+      "EUR": "EUR",
+      "USD": "USD"
+    }
+  },
+  "duration": {
+    "label": "Duration ('end of life')",
+    "help": "How long the fund operates — either with no fixed end, or until a set date after which the fund is wound up and its assets sold.",
+    "options": {
+      "undetermined": "Undetermined",
+      "limited": "Limited to"
+    }
+  },
+  "duration_limited_to": {
+    "label": "Duration — Limited To",
+    "help": "The number of years after which the fund ends.",
+    "unit": "years"
+  },
+  "strategy_ioas": {
+    "label": "Investment Objective and Strategy",
+    "help": "A description of what the fund invests in, why, and what it aims to achieve."
+  },
+  "strategy_tatuea": {
+    "label": "Target Allocation to UCITS Eligible Assets",
+    "help": "The maximum share held in ordinary, easily sellable securities (shares, bonds); the rest goes into long-term investments — the essence of an ELTIF. Note: 45% is a ceiling arising from the ELTIF requirement to hold at least 55% in long-term eligible assets and cannot be set higher."
+  },
+  "strategy_ilseeia": {
+    "label": "Investment Limitation in a Single ELTIF Eligible Asset",
+    "help": "The maximum share of the fund in a single long-term investment — prevents over-reliance on one project. Note: because the fund is retail, 20% is a legal cap under ELTIF diversification rules (Art. 13) and cannot be set higher."
+  },
+  "strategy_ilsuea": {
+    "label": "Investment Limitation in a Single UCITS Eligible Asset",
+    "help": "The maximum share of the fund in a single ordinary security. Note: for a retail fund, 10% is a legal cap (Art. 13 ELTIF)."
+  },
+  "strategy_apac": {
+    "label": "Additional Portfolio Allocation Considerations",
+    "help": "Space for additional rules on portfolio allocation."
+  },
+  "strategy_ramp_up_period": {
+    "label": "Ramp-Up Period",
+    "help": "How long after launch it takes for the fund to fully invest the money it has raised.",
+    "options": {
+      "less_than_1": "Less than a year",
+      "1": "1 year",
+      "2": "2 years",
+      "3": "3 years",
+      "4": "4 years",
+      "5": "5 years"
+    }
+  },
+  "sfdr_category": {
+    "label": "SFDR Article",
+    "help": "The fund's sustainability level under EU rules: Article 6 = no specific focus, Article 8 = considers environmental/social factors, Article 9 = directly targets sustainable impact.",
+    "options": {
+      "6": "Article 6",
+      "8": "Article 8",
+      "9": "Article 9"
+    }
+  },
+  "target_investors": {
+    "label": "Target Investors",
+    "help": "Who the fund is for. This fund is aimed solely at retail investors, who receive stronger protection and a lower permitted level of fund borrowing. The value is fixed.",
+    "lockedHint": "fixed",
+    "options": {
+      "retail": "Retail"
+    }
+  },
+  "leverage_borrowing_amount": {
+    "label": "Borrowing — Amount",
+    "help": "How much the fund may borrow on top of investors' money, as a % of fund value. Borrowing can increase both return and loss. Note: for a retail fund the legal cap is 50% of NAV."
+  },
+  "leverage_borrowing_maturity": {
+    "label": "Borrowing — Maturity",
+    "help": "For how long the fund borrows."
+  },
+  "leverage_aifmd_commitment_method": {
+    "label": "AIFMD Leverage — Commitment Method",
+    "help": "The fund's leverage measured by one of the officially prescribed methods (includes derivatives). Used to compare risk across funds."
+  },
+  "leverage_aifmd_gross_method": {
+    "label": "AIFMD Leverage — Gross Method",
+    "help": "The second officially prescribed leverage calculation, \"gross\", without netting offsetting positions."
+  },
+  "share_class": {
+    "label": "Share Class",
+    "help": "A variant of the same fund. An accumulation class keeps and reinvests returns; a distribution class pays them out to you regularly.",
+    "options": {
+      "accumulation": "Accumulation",
+      "distribution": "Distribution"
+    }
+  },
+  "currency": {
+    "label": "Currency",
+    "help": "The currency in which this class is denominated.",
+    "options": {
+      "CZK": "CZK",
+      "EUR": "EUR",
+      "USD": "USD"
+    }
+  },
+  "minimum_subscription_amount": {
+    "label": "Minimum Subscription Amount",
+    "help": "The lowest amount that can be invested into this class at once."
+  },
+  "management_fee": {
+    "label": "Management Fee",
+    "help": "The annual fund management fee, as a % of the investment."
+  },
+  "performance_fee": {
+    "label": "Performance Fee",
+    "help": "The manager's reward from above-benchmark profit. \"Hurdle\" = the minimum return the fund must beat; \"high water mark\" = the fee is charged only on new highs, not repeatedly on the same profit.",
+    "placeholder": "XX %, subject to XX % hurdle & high water mark…"
+  },
+  "distribution_frequency": {
+    "label": "Distribution Frequency",
+    "help": "How often a distribution class pays returns to you. Complete only for distribution classes.",
+    "options": {
+      "monthly": "Monthly",
+      "quarterly": "Quarterly"
+    }
+  },
+  "subscription_fee": {
+    "label": "Subscription Fee",
+    "help": "A one-off fee when buying units, as a % of the amount invested."
+  },
+  "redemption_fee": {
+    "label": "Redemption Fee",
+    "help": "A fee when leaving the fund. Besides income, it protects remaining investors from the costs triggered by others exiting (anti-dilution)."
+  },
+  "anti_dilution_lmt": {
+    "label": "Anti-Dilution LMT",
+    "help": "Tools ensuring the costs of some investors leaving are borne by those leaving, not those staying. The law does not require them but recommends at least one.",
+    "options": {
+      "anti_dilution_levy": "Anti-dilution levy",
+      "swing_pricing": "Swing pricing",
+      "redemption_fee": "Redemption fee"
+    }
+  },
+  "subscription_frequency": {
+    "label": "Subscription Frequency",
+    "help": "When investors can enter the fund (e.g. the first day of each month).",
+    "placeholder": "[first calendar day of each month]"
+  },
+  "subscription_cut_off_time": {
+    "label": "Subscription Cut-Off Time",
+    "help": "How many days before the subscription date a request to enter must be received.",
+    "unit": "days before"
+  },
+  "subscription_payment_date": {
+    "label": "Subscription Payment Date",
+    "help": "How many days before the subscription date the investor must send the money.",
+    "unit": "days before"
+  },
+  "nav_calculation_date": {
+    "label": "NAV Calculation Date",
+    "help": "The date on which the value of a unit (NAV) is set, at which units are bought and sold.",
+    "placeholder": "[end of the immediately preceding month]"
+  },
+  "redemption_calibration_method": {
+    "label": "Redemption Calibration Method",
+    "help": "The law offers two ways to calculate how much the fund may pay out to exiting investors on a single payout day. Annex I derives the cap from how often redemptions can be requested and how far in advance you must give notice — longer notice allows a larger share to be paid. Annex II instead requires the fund to hold a permanent buffer of easily sellable assets and sets the cap from its size. Choose one.",
+    "options": {
+      "annex_i": "Annex I",
+      "annex_ii": "Annex II"
+    }
+  },
+  "redemption_frequency": {
+    "label": "Redemption Frequency",
+    "help": "How often during the year you can request your money back. More frequent redemptions mean stricter conditions, because the fund holds long-term investments that cannot be sold quickly.",
+    "options": {
+      "weekly": "Weekly",
+      "bi_weekly": "Bi-weekly",
+      "monthly": "Monthly",
+      "bimonthly": "2 months",
+      "quarterly": "Quarterly",
+      "semiannual": "6 months",
+      "annual": "12 months"
+    }
+  },
+  "redemption_notice_period": {
+    "label": "Redemption Notice Period",
+    "help": "How far in advance you must announce you want your money back before the fund pays out. Longer notice gives the fund time to sell assets and so allows a larger share to be paid at once.",
+    "options": {
+      "none": "None",
+      "2_weeks": "2 weeks",
+      "1_month": "1 month",
+      "3_months": "3 months",
+      "6_months": "6 months",
+      "9_months": "9 months",
+      "12_months": "12 months"
+    }
+  },
+  "min_liquid_assets_pct": {
+    "label": "Minimum Liquid Assets",
+    "help": "What share of the fund must be permanently held in cash and easily sellable assets, so there is something to pay out from. The more frequent the redemptions, the larger the buffer the law requires."
+  },
+  "max_redemption_pct": {
+    "label": "Maximum Redemption %",
+    "help": "The highest share of the fund's available money that can be paid out on a single payout day. Calculated automatically from your choice of method, frequency and notice."
+  },
+  "liquid_assets_amount": {
+    "label": "Liquid Assets",
+    "help": "The value of the fund's easily sellable assets (cash, ordinary securities) from which payouts can be met."
+  },
+  "expected_cashflow_12m": {
+    "label": "Expected 12m Cash Flow",
+    "help": "Money the fund is highly certain to receive over the coming year (e.g. repayments, income). Money from new investors is not counted."
+  },
+  "redemption_cut_off": {
+    "label": "Redemption Cut-Off Time",
+    "help": "How many days before the payout day a redemption request must be received.",
+    "unit": "days before"
+  },
+  "redemption_dealing_date": {
+    "label": "Redemption Date",
+    "help": "The day on which redemptions are processed.",
+    "placeholder": "[first calendar day of each month]"
+  },
+  "payment_of_redemption_proceeds": {
+    "label": "Payment of Redemption Proceeds",
+    "help": "How many days after the payout day the investor receives the money.",
+    "unit": "days after"
+  },
+  "carry_policy": {
+    "label": "Treatment of Unexecuted Requests",
+    "help": "When more people request a redemption on one day than the fund may pay, requests are scaled down proportionally. Here you set what happens to the remainder: it automatically moves to the next payout day in the queue, or it lapses and the investor must request again, or the choice is left to the investor.",
+    "options": {
+      "automatic_carry_over": "Automatic carry-over",
+      "new_request": "New request",
+      "investor_choice": "Investor choice"
+    }
+  },
+  "min_holding_period": {
+    "label": "Minimum Holding Period",
+    "help": "The shortest period an investor must hold units before first requesting a redemption.",
+    "unit": "months"
+  },
+  "redemption_in_kind": {
+    "label": "Repayment in Kind",
+    "help": "Whether the fund may pay an exiting investor directly with a portion of its assets instead of cash.",
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "redemptions_simulation": {
+    "label": "Redemptions Simulation",
+    "help": "An interactive demonstration: based on the fund's settings, it calculates when and how much an exiting investor would actually receive — including when many people want to exit at once."
+  },
+  "asset_class": {
+    "label": "Asset Class",
+    "help": "Which category the investment belongs to. The first seven are the ELTIF long-term \"eligible\" assets; the last is the liquid reserve.",
+    "options": {
+      "equity_quasi_equity": "Equity / quasi-equity instruments",
+      "debt_instruments": "Debt instruments",
+      "loans": "Loans",
+      "units_in_other_funds": "Units in other funds",
+      "real_assets": "Real assets",
+      "sts_securitisation": "STS securitisation",
+      "green_bonds": "Green bonds",
+      "liquid_assets_art_9_1_b": "Liquid assets (Art. 9(1)(b))"
+    }
+  },
+  "asset_class_amount": {
+    "label": "Asset Class Amount",
+    "help": "How much is invested in this category."
+  },
+  "eltif_capital": {
+    "label": "ELTIF Capital",
+    "help": "The fund's investable capital (contributions plus uncalled commitments, net of fees) — the regulatory base against which investment limits are measured."
+  },
+  "nav": {
+    "label": "Net Asset Value",
+    "help": "The fund's net value after deducting liabilities."
+  },
+  "total_assets": {
+    "label": "Total Investment",
+    "help": "The total amount invested (sum of the categories)."
+  },
+  "total_eligible_pct": {
+    "label": "Eligible Assets %",
+    "help": "The share of long-term eligible assets in capital; at least 55% by law."
+  },
+  "avg_liquidity": {
+    "label": "Average Liquidity",
+    "help": "Indicative annual liquidity: how much of the fund's accessible portion can be redeemed per year, plus the number of redemption windows per year."
+  },
+  "title": {
+    "label": "Title",
+    "help": "Salutation of the contact person (Ms / Mr).",
+    "options": {
+      "ms": "Ms",
+      "mr": "Mr"
+    }
+  },
+  "last_name": {
+    "label": "Last Name",
+    "help": "The contact person's surname."
+  },
+  "first_name": {
+    "label": "First Name",
+    "help": "The contact person's given name."
+  },
+  "email": {
+    "label": "Email",
+    "help": "The email to which the generated term sheet will be sent."
+  },
+  "company": {
+    "label": "Company",
+    "help": "Your company's name."
+  },
+  "agreement": {
+    "label": "Consent",
+    "help": "I am aware that Finreg processes my personal data for the purpose of responding to my request.",
+    "checkboxLabel": "I am aware that Finreg processes my personal data for the purpose of responding to my request"
+  }
+}

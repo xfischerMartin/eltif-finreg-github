@@ -1,0 +1,362 @@
+{
+  "name_of_eltif": {
+    "label": "Název ELTIF",
+    "help": "Oficiální název fondu, pod kterým bude nabízen investorům."
+  },
+  "legal_form": {
+    "label": "Právní forma",
+    "help": "Právní „obal“ fondu. SICAV je akciová společnost s proměnným kapitálem a vydává investiční akcie. Otevřený podílový fond nemá vlastní právní osobnost — spravuje ho investiční společnost a vydává podílové listy. Volba mění, kdo fond spravuje a jaké cenné papíry investor drží.",
+    "options": {
+      "SICAV": "SICAV (investiční akcie)",
+      "OPF": "Otevřený podílový fond (podílové listy)"
+    }
+  },
+  "self_managed": {
+    "label": "Samosprávný fond",
+    "help": "Určuje, zda si SICAV spravuje majetek sám (má vlastní licenci), nebo správu svěřuje externí společnosti. U podílového fondu tato volba nedává smysl a nezobrazuje se.",
+    "options": {
+      "yes": "Ano",
+      "no": "Ne"
+    }
+  },
+  "name_of_aifm": {
+    "label": "Obhospodařovatel",
+    "help": "Společnost s licencí, která fond reálně řídí — rozhoduje o investicích a hlídá pravidla (u SICAV se spravuje sám nebo přes tuto firmu)."
+  },
+  "name_of_management_company": {
+    "label": "Obhospodařovatel (investiční společnost)",
+    "help": "Investiční společnost, která podílový fond vytvořila a spravuje. Podílový fond sám o sobě není firma, takže ho vždy řídí tato společnost."
+  },
+  "name_of_investment_manager": {
+    "label": "Investiční manažer",
+    "help": "Kdo fakticky vybírá konkrétní investice, pokud je tato role svěřena (delegována) dál. Nepovinné."
+  },
+  "name_of_administrator": {
+    "label": "Administrátor",
+    "help": "Firma, která fondu zajišťuje „provozní zázemí“ — účetnictví, výpočet hodnoty, reporting."
+  },
+  "name_of_depositary": {
+    "label": "Depozitář",
+    "help": "Banka nebo obchodník, který opatruje majetek fondu a dohlíží na jeho pohyby. Ze zákona ho musí mít každý fond."
+  },
+  "fund_reference_currency": {
+    "label": "Referenční měna fondu",
+    "help": "Základní měna, ve které fond vede svou celkovou hodnotu. Podíly v jiných měnách se do ní přepočítávají.",
+    "options": {
+      "CZK": "CZK",
+      "EUR": "EUR",
+      "USD": "USD"
+    }
+  },
+  "duration": {
+    "label": "Doba trvání",
+    "help": "Jak dlouho fond funguje. Buď bez pevného konce, nebo do předem dané doby, po které se fond ukončí a majetek rozprodá.",
+    "options": {
+      "undetermined": "Na dobu neurčitou",
+      "limited": "Omezená na"
+    }
+  },
+  "duration_limited_to": {
+    "label": "Omezená na (roky)",
+    "help": "Počet let, po kterých fond skončí.",
+    "unit": "let"
+  },
+  "strategy_ioas": {
+    "label": "Investiční cíl a strategie",
+    "help": "Slovní popis, do čeho a proč fond investuje a čeho chce dosáhnout."
+  },
+  "strategy_tatuea": {
+    "label": "Cílová alokace do UCITS-způsobilých aktiv",
+    "help": "Kolik procent fond nejvýš drží v běžných, snadno prodejných cenných papírech (akcie, dluhopisy). Zbytek jde do dlouhodobých investic — to je podstata ELTIF. Upozornění: 45 % je strop plynoucí z požadavku ELTIF držet aspoň 55 % v dlouhodobých způsobilých aktivech; nelze jít výš."
+  },
+  "strategy_ilseeia": {
+    "label": "Limit na jedno dlouhodobé aktivum",
+    "help": "Nejvýše kolik procent fondu smí být v jediné dlouhodobé investici — brání přílišné závislosti na jednom projektu. Upozornění: protože je fond určen retail investorům, je 20 % zákonným stropem podle diverzifikačních pravidel ELTIF (čl. 13). Vyšší hodnotu nelze nastavit."
+  },
+  "strategy_ilsuea": {
+    "label": "Limit na aktiva podle čl. 9 odst. 1 písm. b) (UCITS-způsobilá) vydaná jedním subjektem",
+    "help": "Nejvýše kolik procent fondu smí být v jediném běžném cenném papíru. Upozornění: u fondu pro retail investory je 10 % zákonným stropem (čl. 13 ELTIF); nelze jít výš."
+  },
+  "strategy_apac": {
+    "label": "Další možnosti k alokaci",
+    "help": "Prostor pro doplňující pravidla k rozložení portfolia."
+  },
+  "strategy_ramp_up_period": {
+    "label": "Startovací období (ramp-up period)",
+    "help": "Jak dlouho po startu trvá, než fond naplno rozinvestuje vložené peníze.",
+    "options": {
+      "less_than_1": "Méně než rok",
+      "1": "1 rok",
+      "2": "2 roky",
+      "3": "3 roky",
+      "4": "4 roky",
+      "5": "5 let"
+    }
+  },
+  "sfdr_category": {
+    "label": "Ustanovení SFDR",
+    "help": "Míra „udržitelnosti“ fondu podle EU pravidel: článek 6 = bez zvláštního důrazu, článek 8 = zohledňuje ekologická/sociální hlediska, článek 9 = přímo cílí na udržitelný dopad.",
+    "options": {
+      "6": "Článek 6",
+      "8": "Článek 8",
+      "9": "Článek 9"
+    }
+  },
+  "target_investors": {
+    "label": "Cíloví investoři",
+    "help": "Komu je fond určen. Tento fond je určen výhradně retail investorům, kteří mají přísnější ochranu a nižší povolené zadlužení fondu. Hodnota je pevně nastavena.",
+    "lockedHint": "pevně nastaveno",
+    "options": {
+      "retail": "Retail"
+    }
+  },
+  "leverage_borrowing_amount": {
+    "label": "Zápůjčky a úvěry – objem",
+    "help": "Kolik si fond smí půjčit navíc k penězům investorů, vyjádřeno v % hodnoty fondu. Půjčka může zvýšit výnos i ztrátu. Upozornění: u fondu pro retail investory je zákonný strop 50 % NAV."
+  },
+  "leverage_borrowing_maturity": {
+    "label": "Splatnost zápůjček a úvěrů",
+    "help": "Na jak dlouho si fond peníze půjčuje."
+  },
+  "leverage_aifmd_commitment_method": {
+    "label": "Páka — závazková metoda",
+    "help": "Míra zadlužení spočítaná jednou z úředně předepsaných metod (započítává i deriváty). Slouží k porovnání rizika mezi fondy."
+  },
+  "leverage_aifmd_gross_method": {
+    "label": "Páka — hrubá metoda",
+    "help": "Druhá úředně předepsaná metoda výpočtu zadlužení, tentokrát „hrubě“, bez započtení protipozic."
+  },
+  "share_class": {
+    "label": "Třída podílů",
+    "help": "Varianta téhož fondu. Růstová (accumulation) výnosy nechává ve fondu a reinvestuje; výplatní (distribution) je pravidelně vyplácí investorovi.",
+    "options": {
+      "accumulation": "Růstová (accumulation)",
+      "distribution": "Výplatní (distribution)"
+    }
+  },
+  "currency": {
+    "label": "Měna",
+    "help": "V jaké měně je daná třída vedena.",
+    "options": {
+      "CZK": "CZK",
+      "EUR": "EUR",
+      "USD": "USD"
+    }
+  },
+  "minimum_subscription_amount": {
+    "label": "Minimální úpis",
+    "help": "Nejnižší částka, kterou lze do této třídy jednorázově vložit."
+  },
+  "management_fee": {
+    "label": "Poplatek za obhospodařování",
+    "help": "Roční poplatek za správu fondu, v % z investice."
+  },
+  "performance_fee": {
+    "label": "Výkonnostní poplatek",
+    "help": "Odměna správce z nadstandardního zisku. „Hurdle“ = minimální výnos, který musí fond překonat; „high water mark“ = poplatek se platí jen z nového maxima, ne opakovaně z téhož zisku.",
+    "placeholder": "XX %, s výhradou XX % hurdle a high water mark…"
+  },
+  "distribution_frequency": {
+    "label": "Frekvence výplat",
+    "help": "Jak často výplatní třída posílá výnos investorovi. Vyplňte jen u výplatních tříd.",
+    "options": {
+      "monthly": "Měsíčně",
+      "quarterly": "Čtvrtletně"
+    }
+  },
+  "subscription_fee": {
+    "label": "Vstupní poplatek",
+    "help": "Jednorázový poplatek při nákupu podílů, v % z vkladu."
+  },
+  "redemption_fee": {
+    "label": "Výstupní poplatek",
+    "help": "Poplatek při vystoupení z fondu. Kromě příjmu chrání zůstávající investory před náklady, které vyvolá odchod jiných (tzv. anti-dilution)."
+  },
+  "anti_dilution_lmt": {
+    "label": "Nástroje proti ředění (anti-dilution tools)",
+    "help": "Nástroje, které zajistí, aby náklady spojené s odchodem některých investorů nesli ti odcházející, ne ti, kdo ve fondu zůstávají. Zákon je nevyžaduje, ale doporučuje aspoň jeden.",
+    "options": {
+      "anti_dilution_levy": "Anti-dilution levy",
+      "swing_pricing": "Swing pricing",
+      "redemption_fee": "Redemption fee / Výstupní poplatek"
+    }
+  },
+  "subscription_frequency": {
+    "label": "Frekvence úpisů",
+    "help": "Kdy lze do fondu vstupovat (např. vždy 1. den v měsíci).",
+    "placeholder": "[první kalendářní den každého měsíce]"
+  },
+  "subscription_cut_off_time": {
+    "label": "Uzávěrka úpisů",
+    "help": "Kolik dní před dnem úpisu musí být žádost o vstup doručena.",
+    "unit": "dní před"
+  },
+  "subscription_payment_date": {
+    "label": "Datum platby úpisu",
+    "help": "Kolik dní před dnem úpisu musí investor poslat peníze.",
+    "unit": "dní před"
+  },
+  "nav_calculation_date": {
+    "label": "Datum výpočtu NAV",
+    "help": "Ke kterému dni se stanoví hodnota podílu (NAV), za kterou se nakupuje a prodává.",
+    "placeholder": "[konec bezprostředně předcházejícího měsíce]"
+  },
+  "redemption_calibration_method": {
+    "label": "Metoda výpočtu odkupu",
+    "help": "Zákon nabízí dvě cesty, jak spočítat, kolik peněz smí fond vyplatit odcházejícím investorům v jeden výplatní den. Annex I: strop odvodí z toho, jak často se dá o odkup žádat a jak dlouho předem to musí investor ohlásit — čím delší ohlášení, tím větší část lze vyplatit. Annex II: místo toho fond drží stálý polštář snadno prodejných aktiv a podle jeho velikosti se strop určí. Vyberte jednu cestu.",
+    "options": {
+      "annex_i": "Annex I",
+      "annex_ii": "Annex II"
+    }
+  },
+  "redemption_frequency": {
+    "label": "Frekvence odkupů",
+    "help": "Jak často během roku může investor požádat o vrácení peněz. Častější odkupy = přísnější podmínky, protože fond drží dlouhodobé investice, které nejdou rychle prodat.",
+    "options": {
+      "weekly": "Týdně",
+      "bi_weekly": "Čtrnáctidenně",
+      "monthly": "Měsíčně",
+      "bimonthly": "Á 2 měsíce",
+      "quarterly": "Čtvrtletně",
+      "semiannual": "Pololetně",
+      "annual": "Ročně"
+    }
+  },
+  "redemption_notice_period": {
+    "label": "Výpovědní lhůta",
+    "help": "Kolik času předem musí investor oznámit, že chce peníze zpět, než mu je fond vyplatí. Delší lhůta dává fondu čas prodat majetek, a proto umožňuje vyplatit větší část najednou.",
+    "options": {
+      "none": "Žádná",
+      "2_weeks": "2 týdny",
+      "1_month": "1 měsíc",
+      "3_months": "3 měsíce",
+      "6_months": "6 měsíců",
+      "9_months": "9 měsíců",
+      "12_months": "12 měsíců"
+    }
+  },
+  "min_liquid_assets_pct": {
+    "label": "Minimální procento aktiv podle čl. 9 odst. 1 písm. b) (likvidní aktiva)",
+    "help": "Kolik procent fondu musí být trvale v hotovosti a snadno prodejných aktivech, aby bylo z čeho vyplácet. Čím častější odkupy, tím větší polštář zákon vyžaduje."
+  },
+  "max_redemption_pct": {
+    "label": "Maximální % odkupu",
+    "help": "Nejvyšší podíl dostupných peněz fondu, který lze vyplatit v jeden výplatní den. Počítá se automaticky z vaší volby metody, frekvence a lhůty."
+  },
+  "liquid_assets_amount": {
+    "label": "Likvidní aktiva",
+    "help": "Hodnota snadno prodejného majetku fondu (hotovost, běžné cenné papíry), z něhož se dají hradit výplaty."
+  },
+  "expected_cashflow_12m": {
+    "label": "Očekávané roční cash flow",
+    "help": "Peníze, které fondu s vysokou jistotou přijdou během příštího roku (např. splátky, výnosy). Nepočítají se sem peníze od nových investorů."
+  },
+  "redemption_cut_off": {
+    "label": "Uzávěrka odkupů",
+    "help": "Kolik dní před výplatním dnem musí být žádost o odkup doručena.",
+    "unit": "dní před"
+  },
+  "redemption_dealing_date": {
+    "label": "Výplatní den",
+    "help": "Den, ke kterému se odkupy vyřizují.",
+    "placeholder": "[první kalendářní den každého měsíce]"
+  },
+  "payment_of_redemption_proceeds": {
+    "label": "Výplata odkupu",
+    "help": "Za kolik dní po výplatním dni dostane investor peníze na účet.",
+    "unit": "dní po"
+  },
+  "carry_policy": {
+    "label": "Nakládání s nevyřízenou částí",
+    "help": "Když v jeden den požádá o odkup víc lidí, než kolik smí fond vyplatit, žádosti se poměrně zkrátí. Tady určíte, co se stane se zbytkem: buď se automaticky přesune na další výplatní den ve frontě, nebo propadne a investor musí požádat znovu, nebo si volbu nechá na investorovi.",
+    "options": {
+      "automatic_carry_over": "Automatický převod",
+      "new_request": "Nová žádost",
+      "investor_choice": "Volba investora"
+    }
+  },
+  "min_holding_period": {
+    "label": "Minimální doba držení",
+    "help": "Nejkratší doba, po kterou investor musí podíly držet, než může poprvé požádat o odkup.",
+    "unit": "měsíců"
+  },
+  "redemption_in_kind": {
+    "label": "Výplata v nepeněžitém plnění",
+    "help": "Zda fond může místo peněz vyplatit odcházejícího investora přímo částí svého majetku.",
+    "options": {
+      "yes": "Ano",
+      "no": "Ne"
+    }
+  },
+  "redemptions_simulation": {
+    "label": "Simulace odkupů",
+    "help": "Interaktivní ukázka: podle nastavení fondu spočítá, kdy a kolik peněz by odcházející investor reálně dostal — včetně situace, kdy chce vystoupit víc lidí najednou."
+  },
+  "asset_class": {
+    "label": "Kategorie aktiv",
+    "help": "Do jaké kategorie investice patří. Prvních sedm jsou dlouhodobá „způsobilá“ aktiva ELTIF; poslední je likvidní rezerva.",
+    "options": {
+      "equity_quasi_equity": "Kapitálové/kvazikapitálové nástroje",
+      "debt_instruments": "Dluhové nástroje",
+      "loans": "Úvěry",
+      "units_in_other_funds": "Podíly v jiných fondech",
+      "real_assets": "Reálná aktiva",
+      "sts_securitisation": "STS sekuritizace",
+      "green_bonds": "Zelené dluhopisy",
+      "liquid_assets_art_9_1_b": "Likvidní aktiva (čl. 9(1)(b))"
+    }
+  },
+  "asset_class_amount": {
+    "label": "Hodnota kategorie",
+    "help": "Kolik je do dané kategorie investováno."
+  },
+  "eltif_capital": {
+    "label": "Kapitál fondu",
+    "help": "Investovatelný kapitál fondu (vklady + nesplacené přísliby po odečtení poplatků) — regulační základ, k němuž se poměřují investiční limity."
+  },
+  "nav": {
+    "label": "Čistá hodnota aktiv",
+    "help": "Čistá hodnota fondu po odečtení závazků."
+  },
+  "total_assets": {
+    "label": "Celkem investováno",
+    "help": "Celkový objem investic (součet kategorií)."
+  },
+  "total_eligible_pct": {
+    "label": "Podíl způsobilých aktiv",
+    "help": "Podíl dlouhodobých způsobilých aktiv na kapitálu; ze zákona min. 55 %."
+  },
+  "avg_liquidity": {
+    "label": "Průměrná likvidita",
+    "help": "Orientační roční likvidita: kolik z dostupné části fondu lze za rok odkoupit, plus počet odkupových oken ročně. Odvozeno z frekvence a stropu odkupu — bez dalších vstupních polí."
+  },
+  "title": {
+    "label": "Oslovení",
+    "help": "Oslovení kontaktní osoby.",
+    "options": {
+      "ms": "Vážená paní",
+      "mr": "Vážený pane"
+    }
+  },
+  "last_name": {
+    "label": "Příjmení",
+    "help": "Příjmení kontaktní osoby."
+  },
+  "first_name": {
+    "label": "Jméno",
+    "help": "Jméno kontaktní osoby."
+  },
+  "email": {
+    "label": "E-mail",
+    "help": "E-mail, na který přijde vygenerovaný term sheet."
+  },
+  "company": {
+    "label": "Společnost",
+    "help": "Název vaší společnosti."
+  },
+  "agreement": {
+    "label": "Souhlas",
+    "help": "Souhlas se zpracováním údajů — nutný, aby vám mohl být term sheet zaslán.",
+    "checkboxLabel": "Beru na vědomí, že Finreg zpracuje mé osobní údaje za účelem vyřízení mého požadavku"
+  }
+}

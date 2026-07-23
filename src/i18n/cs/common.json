@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "ELTIF Term Sheet Generator",
+    "brand": "FINREG PARTNERS",
+    "subtitle": "Simulace term sheetu a likvidity pro český retail ELTIF"
+  },
+  "landing": {
+    "eyebrow": "Regulační nástroje",
+    "headline": "ELTIF Term Sheet Generator",
+    "description": "Připravte strukturovaný term sheet a simulaci likvidity pro český retail ELTIF — v souladu s ELTIF 2.0 a RTS 2024/2759, pro SICAV i otevřené podílové fondy.",
+    "footer": "FINREG PARTNERS, advokátní kancelář",
+    "markers": {
+      "eltif": "ELTIF 2.0 compliant",
+      "rts": "RTS (EU) 2024/2759",
+      "forms": "Czech SICAV & OPF"
+    }
+  },
+  "nav": {
+    "back": "Zpět",
+    "continue": "Pokračovat",
+    "submit": "Vygenerovat term sheet",
+    "stepOf": "Krok {{current}} z {{total}}",
+    "progress": "Průběh formuláře",
+    "submitRequiresConsent": "Nejprve potvrďte souhlas se zpracováním údajů"
+  },
+  "select": {
+    "placeholder": "—"
+  },
+  "computed": {
+    "eyebrow": "Vypočteno"
+  },
+  "language": {
+    "cs": "CZ",
+    "en": "EN",
+    "label": "Jazyk"
+  },
+  "validation": {
+    "required": "Toto pole je povinné",
+    "email": "Zadejte platný e-mail",
+    "min": "Minimální hodnota je {{min}}",
+    "max": "Maximální hodnota je {{max}}",
+    "aggregateBelowInvestor": "Agregátní poptávka musí být alespoň rovna žádosti investora (zahrnuje i jeho částku)."
+  },
+  "sections": {
+    "fund": {
+      "title": "Základní údaje o fondu",
+      "description": "Právní forma a klíčové subjekty fondu."
+    },
+    "duration": {
+      "title": "Doba trvání",
+      "description": "Jak dlouho fond funguje."
+    },
+    "strategy": {
+      "title": "Investiční strategie a limity",
+      "description": "Cíl, alokace a koncentrační limity."
+    },
+    "leverage": {
+      "title": "Cíloví investoři a pákování",
+      "description": "Retail-only fond a limity zápůjček."
+    },
+    "shareClasses": {
+      "title": "Třídy podílů",
+      "description": "Dynamické třídy s měnou a poplatky."
+    },
+    "fees": {
+      "title": "Vstupní a výstupní poplatky",
+      "description": "Poplatky a nástroje proti ředění."
+    },
+    "subscriptions": {
+      "title": "Úpisy",
+      "description": "Frekvence, uzávěrky a NAV."
+    },
+    "redemptions": {
+      "title": "Odkupy a simulace",
+      "description": "Kalibrace dle RTS 2024/2759 a simulátor."
+    },
+    "portfolio": {
+      "title": "Portfolio a výpočty",
+      "description": "Kategorie aktiv, kapitál, NAV a likvidita."
+    },
+    "contact": {
+      "title": "Kontakt a souhlas",
+      "description": "Údaje pro zaslání term sheetu."
+    }
+  },
+  "comingSoon": "Tato sekce bude doplněna v dalším kroku implementace.",
+  "repeater": {
+    "shareClassLabel": "Třída {{index}}",
+    "addShareClass": "Přidat třídu podílů",
+    "removeShareClass": "Odebrat třídu",
+    "assetClassLabel": "Kategorie aktiv {{index}}",
+    "addAssetClass": "Přidat kategorii aktiv",
+    "removeAssetClass": "Odebrat kategorii"
+  },
+  "advisories": {
+    "antiDilutionRecommended": "Doporučuje se zvolit alespoň jeden nástroj proti ředění (anti-dilution). Pokračovat lze i bez výběru.",
+    "noticeBelow3Months": "Výpovědní lhůta kratší než 3 měsíce vyžaduje notifikaci a zdůvodnění vůči dohledu (NCA), čl. 5(8) RTS 2024/2759.",
+    "frequencyMoreOftenThanQuarterly": "Frekvence odkupů častější než čtvrtletní vyžaduje zdůvodnění vůči dohledu (NCA), čl. 5(4) RTS 2024/2759.",
+    "eligibleBelow55": "Podíl způsobilých aktiv je pod zákonným minimem 55 % kapitálu. Můžete pokračovat — term sheet tuto hodnotu zaznamená."
+  },
+  "portfolio": {
+    "windowsPerYear": "oken/rok"
+  },
+  "submit": {
+    "success": "Term sheet byl zpracován a odeslán.",
+    "successWithRef": "Term sheet byl zpracován a odeslán (ref. {{id}}).",
+    "errorTitle": "Odeslání se nezdařilo",
+    "errorBody": "Při generování term sheetu se něco pokazilo. Zkuste to prosím za chvíli znovu. Pokud problém přetrvává, kontaktujte nás.",
+    "retry": "Zkusit znovu",
+    "submitting": "Odesílám…"
+  },
+  "simulation": {
+    "title": "Simulace odkupů",
+    "help": "Interaktivní ukázka: podle nastavení fondu spočítá, kdy a kolik peněz by odcházející investor reálně dostal — včetně situace, kdy chce vystoupit víc lidí najednou.",
+    "investorAmount": "Žádost investora (částka)",
+    "investorDate": "Datum žádosti investora",
+    "aggregateDemand": "Agregátní poptávka (včetně investora)",
+    "aggregateHint": "Celková poptávka v daný výplatní den včetně této žádosti investora.",
+    "investorChoiceLabel": "Volba investora pro nevyřízený zbytek",
+    "investorChoiceCarry": "Převést zbytek na další výplatní den",
+    "investorChoiceLapse": "Zbytek propadá (nová žádost)",
+    "suspensionToggle": "Simulovat pozastavení odkupů",
+    "suspensionHint": "Výplatní dny spadající do období pozastavení se přeskočí a simulace se posune na další platný výplatní den. Pokud se pozastavení s vaším harmonogramem nepřekrývá, výsledky se nezmění.",
+    "suspensionStart": "Začátek pozastavení",
+    "suspensionDays": "Délka pozastavení (dny)",
+    "suspensionActive": "Pozastavení aktivní — výplatní dny v tomto období jsou přeskočeny.",
+    "capacity": "Kapacita výplatního dne",
+    "base": "Základna odkupu",
+    "maxPct": "Max. % odkupu",
+    "resultsTitle": "Výsledky simulace",
+    "dealingDate": "Výplatní den",
+    "gross": "Hrubá částka",
+    "proRata": "Pro-rata",
+    "remainder": "Zbytek",
+    "fee": "Poplatek",
+    "net": "Čistá výplata",
+    "paymentDate": "Datum výplaty",
+    "totalNet": "Celkem čistě",
+    "daysToFull": "Dní do plného odkupu",
+    "notFullyExecuted": "Žádost nebyla plně vyřízena (zbytek propadl).",
+    "incompleteConfig": "Doplňte povinná pole odkupu a scénáře, aby se zobrazila simulace."
+  }
+}

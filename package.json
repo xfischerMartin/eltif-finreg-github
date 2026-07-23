@@ -1,34 +1,39 @@
 {
-  "name": "hello",
-  "version": "0.1.0",
+  "name": "eltif-finreg",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^5.0.1"
-  },
+  "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@floating-ui/react": "^0.27.20",
+    "@heroicons/react": "^2.2.0",
+    "@hookform/resolvers": "^5.2.2",
+    "framer-motion": "^12.42.2",
+    "i18next": "^26.3.6",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-hook-form": "^7.82.0",
+    "react-i18next": "^17.0.10",
+    "zod": "^4.4.3"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "oxlint": "^1.71.0",
+    "playwright": "^1.49.0",
+    "tailwindcss": "^4.1.18",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1",
+    "vitest": "^4.0.18"
   }
 }

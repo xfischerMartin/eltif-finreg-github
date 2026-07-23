@@ -1,0 +1,143 @@
+{
+  "app": {
+    "title": "ELTIF Term Sheet Generator",
+    "brand": "FINREG PARTNERS",
+    "subtitle": "Term sheet and liquidity simulation for a Czech retail ELTIF"
+  },
+  "landing": {
+    "eyebrow": "Regulatory tooling",
+    "headline": "ELTIF Term Sheet Generator",
+    "description": "Build a structured term sheet and liquidity simulation for a Czech retail ELTIF — aligned with ELTIF 2.0 and RTS 2024/2759, for both SICAV and open-ended mutual fund structures.",
+    "footer": "FINREG PARTNERS, law firm",
+    "markers": {
+      "eltif": "ELTIF 2.0 compliant",
+      "rts": "RTS (EU) 2024/2759",
+      "forms": "Czech SICAV & OPF"
+    }
+  },
+  "nav": {
+    "back": "Back",
+    "continue": "Continue",
+    "submit": "Generate term sheet",
+    "stepOf": "Step {{current}} of {{total}}",
+    "progress": "Form progress",
+    "submitRequiresConsent": "Confirm consent before generating the term sheet"
+  },
+  "select": {
+    "placeholder": "—"
+  },
+  "computed": {
+    "eyebrow": "Computed"
+  },
+  "language": {
+    "cs": "CZ",
+    "en": "EN",
+    "label": "Language"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Enter a valid email address",
+    "min": "Minimum value is {{min}}",
+    "max": "Maximum value is {{max}}",
+    "aggregateBelowInvestor": "Aggregate demand must be at least the investor request (it includes that amount)."
+  },
+  "sections": {
+    "fund": {
+      "title": "Fund basics",
+      "description": "Legal form and key fund entities."
+    },
+    "duration": {
+      "title": "Duration",
+      "description": "How long the fund operates."
+    },
+    "strategy": {
+      "title": "Investment strategy and limits",
+      "description": "Objective, allocation and concentration limits."
+    },
+    "leverage": {
+      "title": "Target investors and leverage",
+      "description": "Retail-only fund and borrowing limits."
+    },
+    "shareClasses": {
+      "title": "Share classes",
+      "description": "Dynamic classes with currency and fees."
+    },
+    "fees": {
+      "title": "Subscription and redemption fees",
+      "description": "Fees and anti-dilution tools."
+    },
+    "subscriptions": {
+      "title": "Subscriptions",
+      "description": "Frequency, cut-offs and NAV."
+    },
+    "redemptions": {
+      "title": "Redemptions and simulation",
+      "description": "RTS 2024/2759 calibration and simulator."
+    },
+    "portfolio": {
+      "title": "Portfolio and calculations",
+      "description": "Asset classes, capital, NAV and liquidity."
+    },
+    "contact": {
+      "title": "Contact and consent",
+      "description": "Details for sending the term sheet."
+    }
+  },
+  "comingSoon": "This section will be added in the next implementation step.",
+  "repeater": {
+    "shareClassLabel": "Share class {{index}}",
+    "addShareClass": "Add share class",
+    "removeShareClass": "Remove class",
+    "assetClassLabel": "Asset class {{index}}",
+    "addAssetClass": "Add asset class",
+    "removeAssetClass": "Remove asset class"
+  },
+  "advisories": {
+    "antiDilutionRecommended": "It is recommended to select at least one anti-dilution tool. You can still continue without selecting any.",
+    "noticeBelow3Months": "A notice period shorter than 3 months requires notification and justification to the NCA (Art. 5(8) RTS 2024/2759).",
+    "frequencyMoreOftenThanQuarterly": "Redemption frequency more often than quarterly requires justification to the NCA (Art. 5(4) RTS 2024/2759).",
+    "eligibleBelow55": "Eligible assets are below the legal minimum of 55% of capital. You can continue — the term sheet will record this value."
+  },
+  "portfolio": {
+    "windowsPerYear": "windows/year"
+  },
+  "submit": {
+    "success": "Term sheet was processed and sent.",
+    "successWithRef": "Term sheet was processed and sent (ref. {{id}}).",
+    "errorTitle": "Submission failed",
+    "errorBody": "Something went wrong while generating your term sheet. Please try again in a moment. If the problem continues, contact us.",
+    "retry": "Try again",
+    "submitting": "Submitting…"
+  },
+  "simulation": {
+    "title": "Redemptions simulation",
+    "help": "Interactive demo: based on the fund's settings, it calculates when and how much an exiting investor would actually receive — including when many people want to exit at once.",
+    "investorAmount": "Investor request (amount)",
+    "investorDate": "Investor request date",
+    "aggregateDemand": "Aggregate demand (incl. investor)",
+    "aggregateHint": "Total demand on that payout day including this investor's request.",
+    "investorChoiceLabel": "Investor choice for unexecuted remainder",
+    "investorChoiceCarry": "Carry remainder to next payout day",
+    "investorChoiceLapse": "Remainder lapses (new request)",
+    "suspensionToggle": "Simulate redemption suspension",
+    "suspensionHint": "Dealing days that fall inside the suspension window are skipped; the simulation moves to the next valid payout day. If the suspension does not overlap your schedule, results will not change.",
+    "suspensionStart": "Suspension start",
+    "suspensionDays": "Suspension length (days)",
+    "suspensionActive": "Suspension active — dealing days in this period are skipped.",
+    "capacity": "Payout-day capacity",
+    "base": "Redemption base",
+    "maxPct": "Max redemption %",
+    "resultsTitle": "Simulation results",
+    "dealingDate": "Dealing date",
+    "gross": "Gross amount",
+    "proRata": "Pro-rata",
+    "remainder": "Remainder",
+    "fee": "Fee",
+    "net": "Net payout",
+    "paymentDate": "Payment date",
+    "totalNet": "Total net",
+    "daysToFull": "Days to full redemption",
+    "notFullyExecuted": "Request was not fully executed (remainder lapsed).",
+    "incompleteConfig": "Complete required redemption and scenario fields to see the simulation."
+  }
+}
